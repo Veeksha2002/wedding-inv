@@ -380,10 +380,10 @@
     }
 
     .countdown {
-      flex-wrap: nowrap;               /* prevent vertical stacking */
+    flex-wrap: nowrap;               
      transform:scale(0.7) ;
      transform-origin:top center ;
-      -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     }
 
     main {
@@ -403,7 +403,12 @@
   @media (max-width: 420px) {
     /* further scale on very small screens */
     .countdown{
-      transform: scale(0.5);
+      transform: scale(0.4);
+    }
+
+    .countdown div {
+      font-size: 1.5rem;
+      padding: 28px 26px;
     }
 
     .gallery {
