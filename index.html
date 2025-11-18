@@ -91,7 +91,7 @@
        The Jinja `url_for` will resolve to the static file path when rendered by Flask. */
     background:
       linear-gradient(to bottom right, rgba(183,110,39,0.66), rgba(247,182,59,0.42)),
-  url("{{ url_for('static', filename='Wed.jpg') }}") no-repeat center center / cover;
+  url("static/Wed.jpg") no-repeat center center / cover;
     /* Make the image faded and less saturated so the text remains readable */
     filter: brightness(0.55) saturate(0.95) contrast(0.98);
     z-index: -2;
@@ -454,9 +454,9 @@ We invite you to witness and celebrate this beautiful union as Deepak and Meghna
     <section id="gallery" aria-label="Wedding Memories Gallery">
       <h2>Our Memories</h2>
       <div class="gallery">
-        <img class="small" src="{{ url_for('static', filename='Wed 1.jpg') }}" alt="Memory: Wed 1" />
-        <img class="small" src="{{ url_for('static', filename='Wed 2.jpg') }}" alt="Memory: Wed 2" />
-        <img class="small" src="{{ url_for('static', filename='Wed 3.jpg') }}" alt="Memory: Wed 3" />
+        <img class="small" src="static/Wed 1.jpg" alt="Memory: Wed 1" />
+        <img class="small" src="static/Wed 2.jpg" alt="Memory: Wed 2" />
+        <img class="small" src="static/Wed 3.jpg" alt="Memory: Wed 3" />
       </div>
     </section>
   </main>
