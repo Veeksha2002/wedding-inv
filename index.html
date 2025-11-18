@@ -379,25 +379,11 @@
       letter-spacing: 4px;
     }
 
-    /* Updated: keep countdown horizontal by scaling and allowing horizontal scroll when needed */
     .countdown {
       flex-wrap: nowrap;               /* prevent vertical stacking */
-      gap: 18px;
-      overflow-x: auto;                /* allow horizontal scroll if it overflows */
-      padding-bottom: 6px;
+     transform:scale(0.8) ;
+     transform-origin:top center ;
       -webkit-overflow-scrolling: touch;
-    }
-    .countdown div {
-      min-width: 88px;                 /* smaller cards */
-      padding: 16px 18px;              /* reduced padding */
-      font-size: 1.05rem;              /* reduced base size */
-      border-radius: 18px;
-      transform-origin: center;
-    }
-    .countdown span {
-      font-size: 2.2rem;               /* smaller number size */
-      display: block;
-      margin-bottom: 0.2em;
     }
 
     main {
@@ -416,13 +402,8 @@
 
   @media (max-width: 420px) {
     /* further scale on very small screens */
-    .countdown div {
-      min-width: 76px;
-      padding: 12px 14px;
-      font-size: 0.95rem;
-    }
-    .countdown span {
-      font-size: 1.8rem;
+    .countdown{
+      transform: scale(0.7);
     }
 
     .gallery {
